@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2 start server.js --name test-app-backend",
+    "stop": "pm2 stop test-app-backend"
   },
   "keywords": [],
   "author": "",
@@ -11,7 +13,8 @@
   "description": "",
   "dependencies": {
     "@prisma/client": "^6.5.0",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "pm2": "^6.0.5"
   },
   "devDependencies": {
     "prisma": "^6.5.0"
